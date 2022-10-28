@@ -29,12 +29,15 @@ nav {
     }
 } */
 
-@media (min-width:300px) and (max-width: 520px) {
-
-    .moreLinks {
-        margin-top: 9px;
-        margin-left: 17px;
+@media (min-width:200px) and (max-width: 600px) {
+    .links {
+        flex-direction: column !important;
     }
+
+    #divider {
+        display: none;
+    }
+
 }
 
 nav a {
@@ -53,35 +56,29 @@ nav a:hover {
 
 .introduction {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     width: 100%;
-    height: 115px;
+    /* height: 115px; */
     background-color: white;
 }
 
 .introduction h1 {
     font-size: 30px;
     color: tomato;
+    align-self: center;
 }
 
 .introduction h1:hover {
-    transform: translate(30px);
+    transform: rotate(180deg);
 }
 
 .introduction h2 {
     font-size: 25px;
     font-family: montserrat;
-    align-self: end;
-    margin-top: 80px;
-    /* background: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%); */
-    color: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
-}
-
-.introduction h2:hover {
-    transform: translate(-50px);
+    align-self: center;
 }
 
 .introduction h2>span {
